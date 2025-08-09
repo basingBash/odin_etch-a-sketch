@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         do {
             gridsize = prompt('Grid size:', );
         } while(!gridsize || gridsize > 100 || isNaN(gridsize) || gridsize <= 0)
+        containerElement.innerHTML = '';
         generateGrid(gridsize);
+        
         
     })
     clear.addEventListener('click',  () =>  {
